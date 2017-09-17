@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+body {
+  background: url(../images/listings/pink.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Grand Hotel', cursive, serif;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+nav {
+  background-color: black;
+}
+
+nav li {
+  display: inline-block;
+  padding: 30px 15px 30px 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: pink;
+  font-size: 40px;
+}
+
+a:hover {
+  color: #01cccc;
+}
+
+.page {
+  color: #01cccc;
+}
+
+p {
+  color:#01cccc;
+  font-size: 100px;
+  padding-top: 20px;
+  text-shadow: -3px 3px 0px #9afefe,
+               -5px 5px 0px black;
+}
+
+section {
+  color: pink;
+  font-size: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-shadow: -5px 5px 0px #01cccc,
+               -10px 10px 0px #01e4e4,
+               -15px 15px 0px #01fefe,
+               -20px 20px 0px #34fefe,
+               -25px 25px 0px #67fefe,
+               -30px 30px 0px #9afefe;
+}
+
+#spin {
+ color:pink;
+ font-size: 120px;
+ padding: 60px 0 60px 0;
+ text-shadow: -3px 3px 0px #9afefe;
+}
+
+input {
+  background-color: pink;
+  border-radius: 10px;
+  border-color: black;
+  color: black;
+  display:block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 3em;
+  margin: 0 auto;
+  margin-top: 20px;
+  /*padding-left: 10px;*/
+  text-align: center;
+}
+
+button {
+  background-color: #01cccc;
+  border-color: black;
+  border-radius: 10px;
+  color: pink;
+  font-family: 'Grand Hotel', cursive, serif;
+  font-size: 60px;
+  font-style: italic;
+  margin: 20px 0 20px 0;
+  width: 300px;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 130px;
+  width: 100%;
+  max-width: 1700px;
+  overflow: hidden;
+  padding: 20px 0 20px 0;
+}
+
+footer a {
+  color: pink;
+  display: block;
+  font-size: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.logo a {
+  color: #01cccc;
+  font-size: 40px;
+}
+
+.logo a:hover {
+  color: pink;
+}
+
+@keyframes rotate-constant {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#spin {
+  animation: rotate-constant 1s infinite;
+  margin:0 auto;
+}

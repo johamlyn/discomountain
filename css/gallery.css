@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+body {
+  background: url(../images/blue.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Grand Hotel', cursive, serif;
+  font-style: italic;
+  text-align: center;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+}
+
+a:hover {
+  color: #89cff0;
+}
+
+.page a {
+  color: #89cff0;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger-icon {
+  padding: 10px;
+  width: 50px;
+}
+
+.hamburger-icon:hover .hamburger-line {
+  background-color: #89cff0;
+}
+
+.hamburger-line {
+  background-color: white;
+  border-radius: 2px;
+  height: 3px;
+  margin: 5px 0;
+}
+
+nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+.navlist {
+  font-size: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0 10px 10px;
+}
+
+.navlink {
+  display: block;
+  padding: 30px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.visible {
+  max-height: none;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+article {
+  width: 100%;
+  margin: 20px auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border: 15px solid white;
+  border-radius: 10px;
+}
+
+p {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  font-size: 20px;
+  margin:0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  padding-top: 20px;
+}
+
+footer a {
+  color: white;
+  display: block;
+  font-size: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.logo a {
+  color: #89cff0;
+  font-size: 40px;
+}
+
+.logo a:hover {
+  color: white;
+}
+
+@media (min-width: 480px) {
+
+  main {
+    font-size: 0;
+    width: 480px;
+  }
+
+  article {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 10px;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
+@media (min-width: 750px) {
+
+  main {
+    width: 750px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    max-height: none;
+  }
+
+  .navlist-item {
+    display: inline-block;
+    border: none;
+  }
+}
+
+@media (min-width: 1220px) {
+
+  main {
+    width: 1220px;
+  }
+
+  article {
+    width: 33.3%;
+  }
+}

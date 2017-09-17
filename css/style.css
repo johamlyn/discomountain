@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+body {
+  background: url(../images/blue.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Grand Hotel', cursive, serif;
+  font-size: 190px;
+  font-style: italic;
+  padding-top: 250px;
+  text-align: center;
+}
+
+a {
+  color:#89cff0;
+  text-decoration:none;
+}
